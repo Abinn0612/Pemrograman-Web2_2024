@@ -36,7 +36,7 @@ $pasiens = $dbh->query($query);
         ?>
             <tr>
                 <td><?php echo $no = $no + 1 ?></td>
-                <td><?php echo $pasien['nama'] ?></td>
+                <td><?= $pasien['nama'] ?></td>
                 <td><?php echo $pasien['email'] ?></td>
                 <td><?php echo $pasien['tmp_lahir'] ?></td>
                 <td><?php echo $pasien['tgl_lahir'] ?></td>
