@@ -5,6 +5,8 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Contactcontroller;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\PasienController;
+use App\Http\Controllers\KelurahanController;
+
 
 Route::get('/', function () {
     return view('welcome');
@@ -31,3 +33,6 @@ Route::get('/about', [AboutController::class, 'index']);
 
 // Praktikum Laravel 3
 Route::get('/admin2/pasien', [PasienController::class, 'index']);
+
+// Latihan Kelurahan
+Route::get('/admin2/kelurahan', [KelurahanController::class, 'index']);
