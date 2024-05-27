@@ -36,3 +36,9 @@ Route::get('/admin2/pasien', [PasienController::class, 'index']);
 
 // Latihan Kelurahan
 Route::get('/admin2/kelurahan', [KelurahanController::class, 'index']);
+
+// Praktikum Laravel 4
+Route::get('/admin2/kelurahan/create', [KelurahanController::class, 'create']);
+Route::post('/admin2/kelurahan/store', [KelurahanController::class, 'store']);
+Route::get('/admin2/kelurahan/show/{id}', [KelurahanController::class, 'show']);
+
