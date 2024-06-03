@@ -28,7 +28,7 @@
                         <form class="forms-sample d-inline" action="{{ url('admin2/kelurahan/destroy', $kelurahan->id) }}" method="post">
                             @csrf
                             @method('delete')
-                            <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Apakah yakin ingin menghapus data?')"><i class="far fa-trash-alt"></i> Hapus</button>
+                            <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Apakah yakin ingin menghapus {{$kelurahan->nama}}?')"><i class="far fa-trash-alt"></i> Hapus</button>
                         </form>
                 </td>
             </tr>
