@@ -42,3 +42,7 @@ Route::get('/admin2/kelurahan/create', [KelurahanController::class, 'create']);
 Route::post('/admin2/kelurahan/store', [KelurahanController::class, 'store']);
 Route::get('/admin2/kelurahan/show/{id}', [KelurahanController::class, 'show']);
 
+// Tugas Laravel 4
+Route::get('/admin2/pasien/create', [PasienController::class, 'create']);
+Route::post('/admin2/pasien/store', [PasienController::class, 'store']);
+Route::get('/admin2/pasien/show/{id}', [PasienController::class, 'show']);
